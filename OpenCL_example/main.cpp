@@ -18,12 +18,12 @@ cl_device_id cdDevice;          // OpenCL устройство
 cl_program cpProgram;           // OpenCL программа
 cl_kernel ckKernel;             // OpenCL ядро
 
-cl_mem devSrcA;               // OpenCL память на устройстве для первого складываемого вектора
-cl_mem devSrcB;               // OpenCL память на устройстве для второго складываемого вектора
-cl_mem devDst;                // OpenCL память на устройстве для результата сложения векторов
+cl_mem devSrcA;					// OpenCL память на устройстве для первого складываемого вектора
+cl_mem devSrcB;					// OpenCL память на устройстве для второго складываемого вектора
+cl_mem devDst;					// OpenCL память на устройстве для результата сложения векторов
 
-size_t globalWorkSize;        // Размер 1D глобаного пространства индексов
-size_t localWorkSize;		    // Размер 1D рабочей группы
+size_t globalWorkSize;			// Размер 1D глобаного пространства индексов
+size_t localWorkSize;			// Размер 1D рабочей группы
 cl_int error;					// Переменная для записи кода ошибки
 
 void Cleanup();
